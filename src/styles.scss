@@ -1,0 +1,91 @@
+// NativeScript core theme
+// @see https://docs.nativescript.org/ui/theme
+@import '~nativescript-theme-core/scss/skins/light/index';
+@import '~nativescript-theme-core/scss/index';
+
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+$good-color: #2ecc71;
+$good-hover:#69dd9a;
+$warn-color: #f1c40f;
+$warn-hover:#f1c40f;
+$bad-color: #e74c3c;
+$bad-hover: #ea6153;
+$info-color:#3498db;
+$info-hover:#5faee3;
+
+.good-btn{
+	background-color: $good-color;
+	transition: all 0.235s ease;
+	color: white;
+	&:active{
+		background-color:$good-hover; 
+	}
+}
+.warn-btn{
+	background-color: $warn-color;
+	transition: all 0.235s ease;
+	color: white;
+	&:active{
+		background-color: $warn-hover;
+	}
+}
+.bad-btn{
+	background-color: $bad-color;
+	transition: all 0.235s ease;
+	color: white;
+	&:active{
+		background-color: $bad-hover;
+	}
+}
+.info-btn{
+	background-color: $info-color;
+	transition: all 0.235s ease;
+	color: white;
+	&:active{
+		background-color: $info-hover;
+	}
+}
+
+
+Image.menu-list{
+	width: 100%;
+}
+.dish-info{
+	font: 20;
+	text-align: center;
+	color: #666;
+	text-transform: capitalize;
+}
+.dish-price{
+	text-align: center;
+	font-size: 15;
+
+}
+
+
+.order-name{
+	font-size: 20;
+	padding: 15;
+}
+
+.delete{
+	background-color: transparent;
+	color: #cdcdcd;
+	&:active{
+		border-color: $info-hover;
+	}
+}
+
+.qty{
+	text-align: center;
+	font-size: 20;
+	padding: 15;
+}
+
+.sub-price{
+	text-align: center;
+	font-size: 20;
+	padding: 15;
+}
